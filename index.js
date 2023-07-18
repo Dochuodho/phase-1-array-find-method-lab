@@ -61,12 +61,21 @@ const record = [
     { year: "1960", result: "N/A"}
   ]
 
-  function superbowlWin(record){
-    
-    const winning=record.find(function(game){
+  function superbowlWin(rec){
+
+    const winning=rec.find(function(game){
         return game.result==="W";
     })
-    console.log(superbowlWin(record));
-  }
+  console.log(winning)
 
+  const undefined=rec.find(function(game){
+    return game.result==="N/A";
+})
+console.log(undefined)
+
+
+}
+
+
+superbowlWin(record);
   
